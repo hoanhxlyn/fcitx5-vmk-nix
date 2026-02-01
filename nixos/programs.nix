@@ -17,6 +17,7 @@
     pnpm
     bun
     caprine
+    gnomeExtensions.kimpanel
   ];
 
   programs.fish.enable = true;

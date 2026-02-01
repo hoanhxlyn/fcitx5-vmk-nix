@@ -10,7 +10,10 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    serena.url = "github:oraios/serena";
+    serena = {
+      url = "github:oraios/serena";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     aic8800 = {
       url = "github:kurumeii/aic8800-nix";
       inputs.nixpkgs.follows = "nixpkgs";
