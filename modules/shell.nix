@@ -5,7 +5,6 @@
 		interactiveShellInit = ''
 			set fish_greeting
 			fastfetch -c examples/13.jsonc
-			fnm env --use-on-cd --version-file-strategy=recursive --shell fish | source
 			'';
 		shellAliases = {
 			rebuild = "nh os switch ~/dotconfigs";

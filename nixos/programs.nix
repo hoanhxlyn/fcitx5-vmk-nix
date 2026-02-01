@@ -14,7 +14,6 @@
 		nh
 		ast-grep
 		brave
-		fnm
 		pnpm
 		bun
 	];

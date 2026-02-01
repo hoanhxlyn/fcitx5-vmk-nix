@@ -5,9 +5,9 @@ in
 	programs.yazi = {
 		enable = true;
 		plugins = {
-			"full-border.yazi" = plug.full-border;
-			"smart-enter.yazi" = plug.smart-enter;
-			"lazygit.yazi" = plug.lazygit;
+			"full-border" = plug.full-border;
+			"smart-enter" = plug.smart-enter;
+			"lazygit" = plug.lazygit;
 		};
 	};
 }
