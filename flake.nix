@@ -6,7 +6,10 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-		neovimNightly.url = "github:nix-community/neovim-nightly-overlay";
+		nvf = {
+			url = "github:NotAShelf/nvf";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 	outputs = { self, nixpkgs, homeManager, ... }@inputs:
 		let 
@@ -26,11 +29,12 @@
 			};
 			modules = [ 
 			./nixos/configuration.nix
+			inputs.nvf.nixosModules.default
 			homeManager.nixosModules.home-manager
 			{
-				nixpkgs.overlays = [
-					inputs.neovimNightly.overlays.default
-				];
+				# nixpkgs.overlays = [
+				# 	inputs.neovimNightly.overlays.default
+				# ];
 				home-manager = {
 					extraSpecialArgs = {
 						inherit inputs username

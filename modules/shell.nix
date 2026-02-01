@@ -7,8 +7,9 @@
 			fastfetch -c examples/13.jsonc
 			'';
 		shellAliases = {
-			rebuild = "nh os switch ~/dotconfigs";
-			cleanup = "nh clean all";
+			rev = "nh os switch ~/dotconfigs";
+			clean = "nh clean all";
+                        opp = "nix store optimise";
 			update = "sudo nix flake update --flake ~/dotconfigs";
 			ll = "eza --long --icons";
 			ls = "eza --all";
