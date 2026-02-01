@@ -49,7 +49,7 @@
   };
 
   home.packages = [
-    inputs.serena.packages.${pkgs.system}.serena
+    inputs.serena.packages.${pkgs.stdenv.hostPlatform.system}.serena
     (pkgs.writeShellScriptBin "start-serena" ''
       # Kill any existing instances to avoid port conflicts
       pkill -f "serena start-mcp-server"

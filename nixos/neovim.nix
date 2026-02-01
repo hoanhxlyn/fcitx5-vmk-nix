@@ -118,6 +118,27 @@ in
         surround.enable = true;
         trailspace.enable = true;
         starter.enable = true;
+        bracketed.enable = true;
+        bufremove.enable = true;
+        comment.enable = true;
+        cursorword.enable = true;
+        diff.enable = true;
+        git.enable = true;
+        hipatterns.enable = true;
+        indentscope.enable = true;
+        jump.enable = true;
+        jump2d.enable = true;
+        misc.enable = true;
+        move.enable = true;
+        notify.enable = true;
+        operators.enable = true;
+        pairs.enable = true;
+        pick.enable = true;
+        sessions.enable = true;
+        snippets.enable = true;
+        statusline.enable = true;
+        tabline.enable = true;
+        visits.enable = true;
 
         basics.setupOpts = {
           options = {
