@@ -15,6 +15,7 @@
     ast-grep
     brave
     pnpm
+    nodePackages.nodejs
     bun
     caprine
     gnomeExtensions.kimpanel
