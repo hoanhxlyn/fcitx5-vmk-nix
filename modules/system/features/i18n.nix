@@ -6,6 +6,7 @@
       addons = with pkgs; [
         kdePackages.fcitx5-unikey
         fcitx5-gtk
+        kdePackages.fcitx5-qt
       ];
       waylandFrontend = true;
       ignoreUserConfig = false;
